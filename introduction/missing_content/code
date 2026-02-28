@@ -1,0 +1,15 @@
+#include <iostream>
+
+int calculateTripCost (double distance) {
+    double baseFare = 5.0;
+    double perKmRate = 2.0;
+
+    double totalCost = baseFare + distance * perKmRate;
+    return totalCost;
+}
+
+int main() {
+    double distance = 12.5;
+    std::cout << "Trip cost for " << distance << " km: $" << calculateTripCost(distance) << std::endl;
+    return 0;
+}
